@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #dde1e7;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: color;
+  height: 300px;
+  width: 600px;
+  -webkit-box-shadow: -10px -10px 10px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
+          box-shadow: -10px -10px 10px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
+  border-radius: 20px;
+}
+
+.city-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.city-icon:nth-child(n) {
+  margin: 20px;
+}
+
+.sun {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: sun 10s linear infinite;
+          animation: sun 10s linear infinite;
+}
+
+.temp {
+  text-align: center;
+}
+
+@-webkit-keyframes sun {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes sun {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.description {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.description h2 {
+  font-size: 1.3em;
+}
+
+.cloud {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: cloud-an 0.5s linear infinite;
+          animation: cloud-an 0.5s linear infinite;
+}
+
+@-webkit-keyframes cloud-an {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes cloud-an {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.calmcloud {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: calm-cloud-an 1.5s linear infinite;
+          animation: calm-cloud-an 1.5s linear infinite;
+}
+
+@-webkit-keyframes calm-cloud-an {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes calm-cloud-an {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,105 @@
+$color:#dde1e7;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: color;
+        height: 300px;
+        width: 600px;
+        box-shadow: -10px -10px 10px #ffffff73 , 7px 7px 5px rgba(94, 104, 121 , .288);
+        border-radius: 20px;
+    }
+}
+
+.city-icon{
+    display: flex;
+    justify-content: space-between;
+    &:nth-child(n){
+        margin: 20px;
+    }
+}
+
+.sun{
+    width: 50px;
+    height: 50px;
+    animation: sun 10s linear infinite;
+}
+
+.temp{
+    text-align: center;
+}
+
+@keyframes sun {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.description{
+    margin: 20px 0;
+    text-align: center;
+    h2{
+        font-size: 1.3em;
+    }
+}
+
+
+//CSS FOR RAIN CLOUDS
+.cloud{
+    width: 50px;
+    height: 50px;
+    animation: cloud-an 0.5s linear infinite;
+}
+
+@keyframes cloud-an {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+//CSS FOR CLOUDS
+.calmcloud{
+    width: 50px;
+    height: 50px;
+    animation: calm-cloud-an 1.5s linear infinite;
+}
+
+@keyframes calm-cloud-an {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
